@@ -2,7 +2,7 @@
   "name": "mce",
   "version": "0.8.9",
   "description": "Material Designed Custom Element",
-  "main": "dist/mce.min.js",
+  "main": "src/index.js",
   "scripts": {
     "build": "webpack",
     "build:doc": "sh docs/jsdoc2md.sh && cp -r src/themes docs && gitbook build",
@@ -26,7 +26,7 @@
     "core"
   ],
   "files": [
-    "dist"
+    "src"
   ],
   "author": "allenhwkim@gmail.com",
   "license": "MIT",
