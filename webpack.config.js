@@ -8,8 +8,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: { 
-    mce: './src/index.js',
-    style: './src/index.css' 
+    mce: './src/index.js'
   },
   devtool: 'source-map',
   output: {

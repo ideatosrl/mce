@@ -62,17 +62,4 @@ customElements.define('mce-leaflet', LeafletMap);
 customElements.define('mce-route', Route);
 customElements.define('mce-router', Router); 
 
-// include css if not already there with "*mce.mincss" or id="mce-css"
-(function() {
-  let cssIncluded = window.debug ||
-    document.querySelector('link[href$="mce.min.css"]') ||
-    document.querySelector('link[id="mce-css"]');
-
-  if (!cssIncluded) {
-    var cssUrl = 'https://unpkg.com/mce/dist/mce.min.css';
-    let linkEl = document.createElement('link');
-    linkEl.setAttribute('rel', "stylesheet");
-    linkEl.setAttribute('href', cssUrl);
-    document.head.appendChild(linkEl);
-  }
-})();
+import './index.css'
